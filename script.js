@@ -152,7 +152,7 @@ const config = {
 	draggable: false,
 	cards: data,
 	btnTitle: "Add to Cart",
-	navControl: true,
+	navControl: false,
 	sliderContentClass: "slider-content",
 };
 const initialize = new Slider(".slider-wrapper", config);
