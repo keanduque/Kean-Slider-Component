@@ -1,0 +1,52 @@
+[
+	{
+		"name": "Clip x3",
+		"price": "&euro; 9.99",
+		"imgSrc": "tractive-gps-dog-4-spare-charger.png"
+	},
+	{
+		"name": "Cat Collar Blue",
+		"price": "&euro; 6.99",
+		"imgSrc": "rogz-cat-collar-for-tractive-gps-dark-blue.png"
+	},
+	{
+		"name": "Rogz Cat Collar",
+		"price": "&euro; 8.99",
+		"imgSrc": "rogz-cat-collar-for-tractive-gps.png"
+	},
+	{
+		"name": "Soft Strap",
+		"price": "&euro; 4.99",
+		"imgSrc": "soft-strap-for-Tractive-GPS-CAT.png"
+	},
+	{
+		"name": "Dog 4 Sleeve",
+		"price": "&euro; 4.99",
+		"imgSrc": "tractive-dog-4-sleeve-dark-blue.png"
+	},
+	{
+		"name": "Dog Sleeve Glow",
+		"price": "&euro; 9.99",
+		"imgSrc": "tractive-dog-4-sleeve-glow-in-the-dark.png"
+	},
+	{
+		"name": "Cat Clips",
+		"price": "&euro; 6.99",
+		"imgSrc": "tractive-gps-cat-4-rubber-clips-combo-pack-vibrant.png"
+	},
+	{
+		"name": "Dog Clips x3",
+		"price": "&euro; 6.99",
+		"imgSrc": "tractive-gps-dog-4-rubber-clips-3x.png"
+	},
+	{
+		"name": "LTE Clips x3",
+		"price": "&euro; 6.99",
+		"imgSrc": "tractive-lte-clip-3x.png"
+	},
+	{
+		"name": "Spare Clip",
+		"price": "&euro; 6.99",
+		"imgSrc": "Tractive-GPS-DOG-mounting-clip-closed.png"
+	}
+]

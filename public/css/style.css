@@ -1,0 +1,287 @@
+/**
+ * Author : Kean Duque
+ * Project : Slider Component for Tractive Styles
+ */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* SLIDER */
+
+.section-slider {
+	position: absolute;
+	overflow: hidden;
+	padding: 5%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	flex-wrap: wrap;
+}
+.section-title-mobile,
+.section-title-desktop {
+	position: relative;
+	padding: 0 10vw;
+	font-weight: 300;
+	margin-bottom: 40px;
+	text-align: center;
+	width: 100%;
+	top: 20%;
+	height: 100%;
+}
+
+.slider-container {
+	/* background-color: grey; */
+	position: relative;
+	width: 100%;
+	height: 280px;
+	display: flex;
+	scroll-behavior: smooth;
+	cursor: grab;
+}
+.slider-container .slider-content {
+	white-space: nowrap;
+}
+.slider-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+}
+.slider-content::-webkit-scrollbar {
+	display: none;
+}
+.slider-wrapper {
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+/*****************************CARD***************************************/
+.card {
+	position: relative;
+	width: 180px;
+	border-radius: 10px;
+	background-color: #f9f9f9;
+	margin: 0.2rem;
+	/* 	flex-shrink: 0; */
+}
+.card.no-data {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.card-img-content,
+.card-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px 14px;
+}
+.card-img-content {
+	position: relative;
+}
+.card-img {
+	position: relative;
+	height: 150px;
+	width: 150px;
+	padding: 3px;
+}
+.card-img-content .card-img {
+	height: 100%;
+	width: 100%;
+}
+.card-content-name,
+.card-content-price {
+	line-height: 2;
+	font-family: "Roboto", sans-serif;
+	text-align: center;
+}
+.card-content-name {
+	font-size: 15px;
+	font-weight: 300;
+	color: #262626;
+}
+.card-content-price {
+	font-size: 13px;
+	color: #606d78;
+}
+.card-content-button {
+	cursor: pointer;
+	transition: all 0.3s ease;
+	border-radius: 20px;
+	border: none;
+	font-size: 12px;
+	color: #ffffff;
+	padding: 8px 16px;
+	background-color: #007fc8;
+	margin: 15px;
+	width: 100%;
+	outline: none;
+	border: none;
+}
+.card-content-button:focus {
+	outline: none;
+	border: none;
+}
+.card-content-button:hover {
+	background-color: #409fd6;
+}
+.scroll-container {
+	width: 20vw;
+	position: relative;
+	margin: 0 auto;
+	height: 5px;
+	bottom: -40px;
+	display: flex;
+	align-items: baseline;
+	align-self: flex-end;
+}
+.scroll-bar {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 7px;
+	border-radius: 20px;
+	background-color: #dfe4e8;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.scroll-inner-bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: 100%;
+	background-color: #262626;
+	border-radius: 20px;
+}
+
+/**** Slider Buttons *****/
+.slider__btn {
+	border: none;
+	width: 2vw;
+	height: 100%;
+	position: absolute;
+	top: 0%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	z-index: 9;
+	outline: none;
+	box-shadow: none;
+}
+button.slider__btn:focus {
+	outline: none;
+	box-shadow: none;
+}
+.slider__btn img {
+	opacity: 0.2;
+	width: 50px;
+}
+.slider__btn:hover img {
+	opacity: 1;
+}
+.slider__btn--left,
+.slider__btn--right {
+	background: none;
+}
+.slider__btn--left {
+	left: 2%;
+}
+.slider__btn--right {
+	right: 2%;
+	transform: rotate(180deg);
+}
+/**** other options ***/
+.note {
+	color: #bd8e8e;
+	font-size: 12px;
+	text-align: center;
+	padding: 2%;
+}
+.note.up {
+	position: absolute;
+	top: 10px;
+}
+
+/************ Mobile - Tablet *****************/
+@media (min-width: 320p) and (max-width: 480px) {
+	.card {
+		width: 167px;
+	}
+}
+
+@media (max-width: 500px) {
+	.card {
+		width: 167px;
+	}
+}
+@media (min-width: 501px) and (max-width: 700px) {
+}
+@media only screen and (max-width: 767px) {
+	.section-title-mobile {
+		font-size: 4vh;
+	}
+	.section-title-desktop {
+		display: none;
+	}
+	.section-title-mobile {
+		display: block;
+	}
+	.controls {
+		visibility: hidden;
+	}
+	.card-content-price {
+		font-size: 16px;
+		line-height: inherit;
+	}
+	.card-content-name {
+		font-size: 18px;
+		line-height: 2;
+	}
+	.scroll-container {
+		display: block;
+	}
+}
+/************ Laptop - Widescreen *****************/
+@media (min-width: 701px) and (max-width: 1000px) {
+}
+@media (min-width: 1001px) {
+	.section-title-mobile {
+		display: none;
+		font-size: 2vh;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.section-title-mobile {
+		display: none;
+	}
+	.scroll-container {
+		display: none;
+	}
+	.controls {
+		visibility: initial;
+	}
+}
