@@ -172,7 +172,7 @@ body {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: inherit;
+	width: 0%;
 	height: 100%;
 	background-color: #262626;
 	border-radius: 20px;
@@ -280,7 +280,7 @@ button.slider__btn:focus {
 		display: none;
 	}
 	.scroll-container {
-		display: none;
+		width: 10vw;
 	}
 	.controls {
 		visibility: initial;
