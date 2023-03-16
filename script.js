@@ -19,18 +19,40 @@ class Slider {
 		this.events(slider, options);
 	}
 	events(slider, options) {
+		const self = this;
+		const getWindowWidth = window.innerWidth;
 		const touchOptions = {
 			imgClass: options.cardImgClass,
 			slider: slider,
+			cards: options.cards,
 		};
 		this.sliderTouchSlide(touchOptions);
 
 		// navigation left right button control
 		if (options.navControl === false) {
-			console.log("disabled");
 			document.querySelector(".controls").style.visibility = "hidden";
 		} else {
 			this.sliderNav(options);
+		}
+
+		// check size of data and scrensize upon load and resize
+		window.addEventListener("load", function () {
+			self.scrollBarDisplay(getWindowWidth, options);
+		});
+		window.addEventListener("resize", function () {
+			self.scrollBarDisplay(getWindowWidth, options);
+		});
+	}
+	// check if the size of window match the criteria to show scroll or data is < 4 || 2
+	scrollBarDisplay(windowWidth, options) {
+		const scrollContainer = document.querySelector(".scroll-container");
+
+		if (windowWidth > 768 && options.cards.length < 4) {
+			scrollContainer.style.visibility = "hidden";
+		} else if (windowWidth < 768 && options.cards.length <= 2) {
+			scrollContainer.style.visibility = "hidden";
+		} else {
+			scrollContainer.style.visibility = "visible";
 		}
 	}
 	// control for touching slider
