@@ -53,6 +53,7 @@ body {
 	display: flex;
 	scroll-behavior: smooth;
 	cursor: grab;
+	max-width: 730px;
 }
 .slider-container .slider-content {
 	white-space: nowrap;
@@ -208,10 +209,10 @@ button.slider__btn:focus {
 	background: none;
 }
 .slider__btn--left {
-	left: 2%;
+	left: 5%;
 }
 .slider__btn--right {
-	right: 2%;
+	right: 5%;
 	transform: rotate(180deg);
 }
 /**** other options ***/
