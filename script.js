@@ -143,6 +143,8 @@ class Slider {
 		);
 	}
 }
+
+//change settings here for the slider
 const config = {
 	cardClass: "card",
 	cardImgClass: "card-img",
