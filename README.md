@@ -45,6 +45,8 @@ const config = {
 5. You can also change the title for the button
 6. To use navigation control change the navControl value to true
 7. sliderContentClass class for the content of the slider that holds the touch and nav events
+8. use mouse down to grab the slider to slide
+9. use mouse wheel to slide the slier.
 
 
 ## Task Done : 
