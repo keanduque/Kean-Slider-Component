@@ -1,4 +1,4 @@
-# Kean Slider Component for Tractive
+# Kean Slider Component
 
 ##=======================================================
 
@@ -52,8 +52,7 @@ const config = {
 ## Task Done :
 
 -   Build HTML and CSS for the Structure of the Slider
--   font used is Roboto based on the Tractive fonts style
--   downloaded some images from the Tractive website for testing the items displayed.
+-   font used is Roboto
 -   create a Slider using touch event for mobile and desktop
 -   add slider nav control for desktop
 -   code the functionality of the Slider using only Vanilla JS

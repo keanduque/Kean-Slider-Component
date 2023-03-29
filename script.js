@@ -1,6 +1,6 @@
 /**
  * Author : Kean Duque
- * Project : Slider Component for Tractive
+ * Project : Slider Component
  */
 import data from "./data.json" assert { type: "json" };
 
